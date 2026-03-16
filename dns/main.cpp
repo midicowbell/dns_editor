@@ -67,8 +67,8 @@ int main() {
         return 1;
     }
 
-    std::string dns1 = "176.99.11.77";
-    std::string dns2 = "80.78.247.254";
+    std::string dns1 = "87.228.47.200";
+    std::string dns2 = "87.228.47.201";
     std::vector<std::string> interfaces = GetActiveInterfaces();
 
     if (interfaces.empty()) {
@@ -77,12 +77,12 @@ int main() {
     }
 
     int choice;
-    std::cout << "==============================\n";
-    std::cout << "    DNS IPv4 Переключатель    \n";
-    std::cout << "==============================\n";
-    std::cout << "[1] Включить DNS (статический)\n";
-    std::cout << "[2] Выключить DNS (авто/DHCP)\n";
-    std::cout << "Выберите действие: ";
+    std::wcout << "==============================\n";
+    std::wcout << "    DNS IPv4 Переключатель    \n";
+    std::wcout << "==============================\n";
+    std::wcout << "[1] Включить DNS (статический)\n";
+    std::wcout << "[2] Выключить DNS (авто/DHCP)\n";
+    std::wcout << "Выберите действие: ";
     std::cin >> choice;
 
     switch (choice) {
